@@ -1,0 +1,217 @@
+<!doctype html>
+<html ng-app="todoApp" class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTECH Home Page</title>
+    <script src="js\angular.js"></script>
+    <script src="js/todo.js"></script>
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+<!-- Begin nav -->
+<!-- mobile nav bar -->
+<div class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-center-logo" data-hide-for="medium">
+  <div class="title-bar-left">
+    <div class="title-bar-title"><img src="http://placehold.it/100x39" alt="" /></div>
+  </div>
+  <div class="title-bar-right">
+    <button class="menu-icon" type="button" data-toggle="topbar-center-logo"></button>
+  </div>
+</div>
+<!-- /mobile nav bar -->
+
+<!-- medium and larger nav bar -->
+<div class="top-bar topbar-center-logo" id="topbar-center-logo">
+  <div class="top-bar-left">
+    <ul class="menu vertical medium-horizontal">
+      <li><a href="#">Home</a></li>
+      <li><a href="about/index.html">About</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-center">
+    <img src="Images\BTECH100x390.png" alt="" />
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu vertical medium-horizontal">
+      <li><a href="parent/index.html">Parent</a></li>
+      <li><a href="students/index.html">Students</a></li>
+      <li><a href="multimedia/index.html">Multi-Media</a></li>
+      <li><a href="angular/index.html">Angular</a></li>
+    </ul>
+  </div>
+</div>
+<!-- /medium and larger nav bar -->
+
+<!-- End nav-->
+
+<!-- Begin Hero -->
+<div class="hero-section">
+  <div class="hero-section-text">
+    <h1>Home</h1>
+    <h5>Welcome to BTECH Website</h5>
+  </div>
+</div>
+<!-- End Hero-->
+
+<!-- Begin Content -->
+<!-- Posts list -->
+
+<div class="post-item">
+  <a href="#" class="post-thumbnail">
+    <img src="Images\IMG_4510.JPG" alt="">
+  </a>
+  <div class="post-text">
+    <a href="#">
+      <h3 class="post-title">Welcome to BTECH Website</h3>
+    </a>
+    <div class="post-meta">
+    </div>
+    <div class="post-summary">
+      <span class="meta"><span class="meta-icon fa fa-user-circle-o" aria-hidden="true"></span><a class="meta-text">Nhoj Plummer</a></span>
+      <span class="meta"><span class="meta-icon fa fa-clock-o" aria-hidden="true"></span><span class="meta-text">5/4/17</span></span>
+      <p>Students attending Business Technology Early College High School (BTECH) will learn how to help the world run better using technology to solve everyday world problems. Our students will become expert readers, writers, and critical thinkers with the technical skills to be successful in our modern information-based global economy. Students have up to six years to earn a high school diploma and an associate degree—free of cost—from Queensborough Community College and hands-on job training and apprenticeship with SAP (an international enterprise software development company). Upon graduation, our students will have the knowledge, skills, career and technical education certifications, and work experience that will make our graduates much more competitive for employment and/or four-year colleges.
+    </div>
+  </div>
+</div>
+
+<div class="post-item">
+  <a href="#" class="post-thumbnail">
+    <img src="Images\new schedule image.jpg" alt="">
+  </a>
+  <div class="post-text">
+    <a href="#">
+      <h3 class="post-title">BTECH</h3>
+    </a>
+    <div class="post-meta">
+      <span class="meta"><span class="meta-icon fa fa-user-circle-o" aria-hidden="true"></span><a class="meta-text">Nhoj Plummer</a></span>
+      <span class="meta"><span class="meta-icon fa fa-clock-o" aria-hidden="true"></span><span class="meta-text">5/4/17</span></span>
+    </div>
+    <div class="post-summary">
+      <p>Here you will see the schedule times for each class your child will be attending.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="post-item">
+  <a href="#" class="post-thumbnail">
+    <img src="Images\news-briefs-rect4.jpg" alt="">
+  </a>
+  <div class="post-text">
+    <a href="#">
+      <h3 class="post-title">BTECH News Briefs</h3>
+    </a>
+    <div class="post-meta">
+      <span class="meta"><span class="meta-icon fa fa-user-circle-o" aria-hidden="true"></span><a class="meta-text">Nhoj Plummer</a></span>
+      <span class="meta"><span class="meta-icon fa fa-clock-o" aria-hidden="true"></span><span class="meta-text">5/4/17</span></span>
+    </div>
+    <div class="post-summary">
+      <ol>
+        <li>BTECH Spirit Week (May 1 - 5)</li>
+        <p>Click here for more information: <a href="Documents\BTECH SPIRIT WEEK SPRING 2017.pdf" class="post-read-more">Read more<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+
+        <li>New BOT Academy Times</li>
+        Starting tomorrow, Friday 4.28, BOT will run from 3:25 - 4:55, for ALL classes for the remainder of the Spring Semester.
+
+
+        <li>School Leadership Team Meeting</li>
+        Thursday, May 4, 2017 at 5:30 pm in room 363
+        </ol>
+
+
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+</div>
+
+
+<!-- End Content-->
+
+<!-- Begin Angular 1 -->
+<div>
+  <label>Name:</label>
+  <input type="text" ng-model="yourName" placeholder="Enter a name here">
+  <hr>
+  <h1>Hello {{yourName}}!</h1>
+</div>
+<!-- End Angular 1 -->
+
+<!-- Begin Angular 2 -->
+<h2>Todo</h2>
+<div ng-controller="TodoListController as todoList">
+  <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+  [ <a href="" ng-click="todoList.archive()">archive</a> ]
+  <ul class="unstyled">
+    <li ng-repeat="todo in todoList.todos">
+      <label class="checkbox">
+        <input type="checkbox" ng-model="todo.done">
+        <span class="done-{{todo.done}}">{{todo.text}}</span>
+      </label>
+    </li>
+  </ul>
+  <form ng-submit="todoList.addTodo()">
+    <input type="text" ng-model="todoList.todoText"  size="30"
+    placeholder="add new todo here">
+    <input class="btn-primary" type="submit" value="add">
+  </form>
+</div>
+<!-- End Angular 2 -->
+
+<!-- Begin Footer -->
+<footer class="responsive-blog-footer">
+  <div class="row">
+    <div class="medium-8 columns small-order-2 medium-order-1 about-container">
+      <div class="row">
+        <div class="hide-for-small-only medium-4 columns about-section">
+          <img src="Images\BTECH250x250finished.png">
+        </div>
+        <div class="medium-8 columns about-section">
+          <h4> BUSINESS TECHNOLOGY EARLY COLLEGE HIGH SCHOOL</h4>
+          <p> 230-17 Hillside Avenue</p>
+          <p> 3rd Floor</p>
+          <p> Queens Village, NY 11427</p>
+          <p> Phone: 718-217-3613</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row tag-search">
+    <div class="columns">
+      <h4>BTECH Navigation</h4>
+      <ul class="menu simple tag-section">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about/index.html">About</a></li>
+        <li><a href="parent/index.html">Parent</a></li>
+        <li><a href="students/index.html">Students</a></li>
+        <li><a href="multimedia/index.html">Multi-Media</a></li>
+        <li><a href="angular/index.html">Angular</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row columns flex-container align-justify">
+    <p> Copyright © 2015-2017 eChalk Inc.</p>
+    <div class="up-arrow">
+      <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- End Footer-->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
